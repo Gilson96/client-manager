@@ -7,5 +7,22 @@ use Illuminate\Database\Eloquent\Model;
 
 class Client extends Model
 {
-    use HasFactory;
+    protected $fillable = [    
+        "first_name",
+        "last_name",
+        "username",
+        "dark_mode",
+    ];
+
+    public function toogleMode() : bool
+    {
+        if($this->dark_mode == 1){
+
+            return true;
+            
+        } else {
+
+            return false;
+        }
+    }
 }

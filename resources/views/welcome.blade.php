@@ -1,5 +1,10 @@
-@extends("app")
-@section('content')
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<title>My Amazing Blog</title>
+</head>
+<body>
     <div class="list-group">
 
          {{-- loop over all of the clients  --}}
@@ -15,4 +20,5 @@
             </a>
         @endforeach
     </div>
-@endsection
+</body>
+</html>

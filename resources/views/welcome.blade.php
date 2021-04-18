@@ -22,13 +22,13 @@
     </head>
     <body class="antialiased">
         
-           @foreach (App\Models\Client::all() as $client)
-               <a href="/clients/{{ $client->id }}">
+           {{-- @foreach (App\Models\Client::all() as $client)
+               <a href="/clients/{{ $client->id }}"> --}}
                        
                        {{-- <h5 class="mb-1">{{ $client->first_name }}</h5> --}}
    
-               </a>
-           @endforeach
+               {{-- </a>
+           @endforeach --}}
        
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))

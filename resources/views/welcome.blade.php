@@ -22,7 +22,7 @@
     </head>
     <body class="antialiased">
         
-           @foreach (App\Models\Client::all() as $client)
+           @foreach (App\Models\Clients::all() as $client)
                <a href="/clients/{{ $client->id }}">
                        
                        {{-- <h5 class="mb-1">{{ $client->first_name }}</h5> --}}

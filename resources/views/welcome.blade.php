@@ -21,19 +21,15 @@
         </style>
     </head>
     <body class="antialiased">
-        {{-- <div class="list-group">
-           }
+        
            @foreach (App\Models\Client::all() as $client)
-               <a href="/clients/{{ $client->id }}" class="list-group-item list-group-item-action">
-                   <div class="d-flex w-100 justify-content-between">
+               <a href="/clients/{{ $client->id }}">
                        
-                       <h5 class="mb-1">{{ $client->first_name }}</h5>
-   
-                   </div>
+                       {{-- <h5 class="mb-1">{{ $client->first_name }}</h5> --}}
    
                </a>
            @endforeach
-       </div> --}}
+       
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">

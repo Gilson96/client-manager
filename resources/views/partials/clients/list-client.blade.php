@@ -9,5 +9,5 @@
 
     </div>
 
-    <p class="mb-1">{{ $client->toggleMode() }}</p>
+    {{-- <p class="mb-1">{{ $client->toggleMode() }}</p> --}}
 </a>

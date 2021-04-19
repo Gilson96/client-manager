@@ -14,15 +14,16 @@ class Client extends Model
         "dark_mode",
     ];
 
-    public function toogleMode() : bool
+    public function toggleMode() : bool
     {
         if($this->dark_mode == 1){
 
-            return true;
+            
+            return "you are in the dark mode";
             
         } else {
 
-            return false;
+            return "you are in the light mode";
         }
     }
 }
